@@ -6,38 +6,44 @@
 <title>Documento con secciones y colores</title>
 <style>
     /* Estilos para las secciones */
-    header { background-color: #4f7ef3; border: 10px solid black; width: 1000px; height: 300px;} 
-    nav { background-color: #90EE90; border: 10px solid #000000; width: 1000px;  height: 100px; /* Altura deseada */ }
-    main { background-color: #c0c1c2;  border: 10px solid black; width: 1000px;  height: 500px; } 
-    section {  background-color: #fdfdfd;
+    .header { background-color: #4f7ef3; border: 10px solid black; width: 1000px; height: 300px;} 
+    .nav { background-color: #90EE90; border: 10px solid #000000; width: 1000px;  height: 100px; /* Altura deseada */ }
+    .main { background-color: #c0c1c2;  border: 10px solid black; width: 1000px;  height: 500px; 
+        position: relative;
+               top: -260px; /* Mover hacia abajo */
+                left: -9px;} 
+    .section {  background-color: #fdfdfd;
         width: 500px; /* Ancho deseado */
         height: 450px; /* Altura deseada */       
                 position: relative;
-               top: -520px; /* Mover hacia abajo */
-                left: 236px;
-                border: 5px solid rgb(189, 179, 146);}
-    article { 
+               top: -435px; /* Mover hacia abajo */
+                left: 237px;
+               }
+    .article { 
         background-color: #fdfdfd; 
         width: 200px; /* Ancho deseado */
         height: 450px; /* Altura deseada */       
                 position: relative;
-                top: -1030px; /* Mover hacia abajo */
-                left: 740px;
-                border: 5px solid rgb(189, 179, 146);}
-    aside { background-color: #ffffff;  
+                top: -885px; /* Mover hacia abajo */
+                left: 770px;
+                }
+   .aside { background-color: #ffffff;  
         width: 200px; /* Ancho deseado */
         height: 450px; /* Altura deseada */       
                 position: relative;
-                top: -10px; /* Mover hacia abajo */
-                left: -10px;  
-                border: 5px solid rgb(189, 179, 146);} 
-    footer { background-color: #FFD700;  border: 10px solid black; width: 1000px;  height: 50px; } 
+                top: 15px; /* Mover hacia abajo */
+                left: 10px;  
+} 
+    footer { background-color: #FFD700;  border: 10px solid black; width: 1000px;  height: 50px; 
+        position: relative;
+               top: -265px; /* Mover hacia abajo */
+                left: -9px;} 
 
     /* Estilos generales */
-    body {padding: 0; font-family: Arial, sans-serif; margin: 0;}
-    section, article, aside { padding: 20px; margin: 10px; }
-    ul { list-style-type: none; padding: 0; margin: 0px; text-align: left;}
+    body {padding: 0; font-family: Arial, sans-serif; margin: 0; text-align: center;}
+    ul { list-style-type: none; padding: 0; margin: 0px; text-align: center;}
     .mi-caja {
+        text-align: center;
         width: 150px; /* Ancho deseado */
         height: 80px; /* Altura deseada */
         border: 1px solid black; /* Borde para visualización */
@@ -47,6 +53,7 @@
         position: relative;
         top: 10px; /* Mover hacia abajo */
          left: 10px; 
+         text-align: center;
     }
     .mi-caja1{
         width: 150px; /* Ancho deseado */
@@ -142,6 +149,9 @@
         top: -275px; /* Mover hacia abajo */
         left: 815px; 
     }
+    div{
+        text-align: center;
+    }
 </style>
 </head>
 <body>
@@ -150,35 +160,35 @@
     <!-- Instructor: Diego Ivan May -->
     <!-- Estudiante: Josue Moises Uicab Pech -->
     <!-- Grupo: 3 - F -->
-<nav>
+<div class="nav">
     <ul>
-        <li><div class="mi-caja"></div></li> 
-        <li><div class="mi-caja1"></div></li>
-        <li><div class="mi-caja2"></div></li>
-        <li><div class="mi-caja3"></div></li>  
-        <li><div class="mi-caja4"></div></li>           
+        <li><div class="mi-caja">BOX</div></li> 
+        <li><div class="mi-caja1">BOX</div></li>
+        <li><div class="mi-caja2">BOX</div></li>
+        <li><div class="mi-caja3">BOX</div></li>  
+        <li><div class="mi-caja4">BOX</div></li>           
 
     </ul>
-</nav>
+</div>
 
-<header>
+<div class="header">
     <ul>
-        <li><div class="banner"></div></li> 
-        <li><div class="logo"></div></li> 
-        <li><div class="login"></div></li>
-        <li><div class="form"></div></li>
+        <li><div class="banner">banner</div></li> 
+        <li><div class="logo">logo</div></li> 
+        <li><div class="login">login</div></li>
+        <li><div class="form">form</div></li>
     </ul>
-</header>
-
-<main>
-    <aside>
-    </aside>
-    <section>
-    </section>
-
-    <article>
-    </article>
-</main>
+<div>
+<div class="main">
+    <ul>
+    <div class="aside">
+    </div>
+    <div class="section">
+    </div>
+    <div class="article">
+    </div>
+    </ul>
+</div>
 
 <footer>
 </footer>

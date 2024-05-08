@@ -6,25 +6,25 @@
 <title>Documento con secciones y colores</title>
 <style>
     /* Estilos para las secciones */
-    header { background-color: #4f7ef3; border: 10px solid black; width: 750px; height: 250px;} 
-    nav { background-color: #238423; border: 10px solid #000000; width: 750px;  height: 50px; /* Altura deseada */ }
-    main { background-color: #c0c1c2;  border: 10px solid black; width: 750px;  height: 400px; } 
-    article { 
+    .header { background-color: #4f7ef3; border: 10px solid black; width: 750px; height: 250px;} 
+    .nav { background-color: #238423; border: 10px solid #000000; width: 750px;  height: 50px; /* Altura deseada */ }
+   .main { background-color: #c0c1c2;  border: 10px solid black; width: 750px;  height: 400px; } 
+    .article { 
         background-color: #fdfdfd; 
         width: 450px; /* Ancho deseado */
         height: 360px; /* Altura deseada */       
                 position: relative;
-                top: -425px; /* Mover hacia abajo */
-                left: -10px;
-                border: 5px solid rgb(189, 179, 146);}
-    aside { background-color: #ffffff;  
-        width: 200px; /* Ancho deseado */
+                top: -340px; /* Mover hacia abajo */
+                left: 10px;
+                }
+    .aside { background-color: #ffffff;  
+        width: 240px; /* Ancho deseado */
         height: 360px; /* Altura deseada */       
                 position: relative;
-                top: -10px; /* Mover hacia abajo */
-                left: 490px;  
-                border: 5px solid rgb(189, 179, 146);} 
-    footer { background-color: #FFD700;  border: 10px solid black; width: 750px;  height: 50px; } 
+                top: 20px; /* Mover hacia abajo */
+                left: 500px;  
+             } 
+    .footer { background-color: #FFD700;  border: 10px solid black; width: 750px;  height: 50px; } 
 
     /* Estilos generales */
     body {padding: 0; font-family: Arial, sans-serif; margin: 0;}
@@ -58,26 +58,22 @@
 </head>
 <body>
     
-    <header>
+    <div class="header">
     <ul>
         <li><div class="banner"></div></li> 
         <li><div class="logo"></div></li> 
     </ul>
-</header>
+</div>
 
-<nav>
-</nav>
+<div class="nav"></div>
 
 
-<main>
-    <aside>
-    </aside>
-    <article>
-    </article>
-</main>
+<div class="main">
+    <div class="aside"></div> 
+    <div class="article"></div>
+</div>
 
-<footer>
-</footer>
+<div class="footer"></div>
 
 </body>
 </html>

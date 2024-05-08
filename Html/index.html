@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documento con secciones y colores</title>
+<style>
+    /* Estilos para las secciones */
+    header { background-color: #4f7ef3; border: 10px solid black; width: 1000px; height: 300px;} 
+    nav { background-color: #90EE90; border: 10px solid #000000; width: 1000px;  height: 100px; /* Altura deseada */ }
+    main { background-color: #c0c1c2;  border: 10px solid black; width: 1000px;  height: 500px; } 
+    section {  background-color: #fdfdfd;
+        width: 500px; /* Ancho deseado */
+        height: 450px; /* Altura deseada */       
+                position: relative;
+               top: -520px; /* Mover hacia abajo */
+                left: 236px;
+                border: 5px solid rgb(189, 179, 146);}
+    article { 
+        background-color: #fdfdfd; 
+        width: 200px; /* Ancho deseado */
+        height: 450px; /* Altura deseada */       
+                position: relative;
+                top: -1030px; /* Mover hacia abajo */
+                left: 740px;
+                border: 5px solid rgb(189, 179, 146);}
+    aside { background-color: #ffffff;  
+        width: 200px; /* Ancho deseado */
+        height: 450px; /* Altura deseada */       
+                position: relative;
+                top: -10px; /* Mover hacia abajo */
+                left: -10px;  
+                border: 5px solid rgb(189, 179, 146);} 
+    footer { background-color: #FFD700;  border: 10px solid black; width: 1000px;  height: 50px; } 
+
+    /* Estilos generales */
+    body {padding: 0; font-family: Arial, sans-serif; margin: 0;}
+    section, article, aside { padding: 20px; margin: 10px; }
+    ul { list-style-type: none; padding: 0; margin: 0px; text-align: left;}
+    .mi-caja {
+        width: 150px; /* Ancho deseado */
+        height: 80px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: 10px; /* Mover hacia abajo */
+         left: 10px; 
+    }
+    .mi-caja1{
+        width: 150px; /* Ancho deseado */
+        height: 80px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -70px; /* Mover hacia abajo */
+        left: 200px; 
+    }
+
+    .mi-caja2{
+        width: 150px; /* Ancho deseado */
+        height: 80px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -150px; /* Mover hacia abajo */
+        left: 400px; 
+    }
+    .mi-caja3{
+        width: 150px; /* Ancho deseado */
+        height: 80px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -230px; /* Mover hacia abajo */
+        left: 600px; 
+    }
+
+    .mi-caja4{
+        width: 150px; /* Ancho deseado */
+        height: 80px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -310px; /* Mover hacia abajo */
+        left: 800px; 
+    }
+
+    .banner{
+        width: 800px; /* Ancho deseado */
+        height: 290px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: 5px; /* Mover hacia abajo */
+        left:10px; 
+    }
+
+    .logo{
+        width: 180px; /* Ancho deseado */
+        height: 95px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -285px; /* Mover hacia abajo */
+        left: 815px; 
+    }
+
+    .login{
+        width: 180px; /* Ancho deseado */
+        height: 95px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -280px; /* Mover hacia abajo */
+        left: 815px; 
+    }
+
+    .form{
+        width: 180px; /* Ancho deseado */
+        height: 90px; /* Altura deseada */
+        border: 1px solid black; /* Borde para visualización */
+        padding: 10px; /* Espacio interno */
+        box-sizing: border-box; /* Incluye el borde en el tamaño total */
+        background-color: #f8f8f8;
+        position: relative;
+        top: -275px; /* Mover hacia abajo */
+        left: 815px; 
+    }
+</style>
+</head>
+<body>
+<nav>
+    <ul>
+        <li><div class="mi-caja"></div></li> 
+        <li><div class="mi-caja1"></div></li>
+        <li><div class="mi-caja2"></div></li>
+        <li><div class="mi-caja3"></div></li>  
+        <li><div class="mi-caja4"></div></li>           
+
+    </ul>
+</nav>
+
+<header>
+    <ul>
+        <li><div class="banner"></div></li> 
+        <li><div class="logo"></div></li> 
+        <li><div class="login"></div></li>
+        <li><div class="form"></div></li>
+    </ul>
+</header>
+
+<main>
+    <aside>
+    </aside>
+    <section>
+    </section>
+
+    <article>
+    </article>
+</main>
+
+<footer>
+</footer>
+
+</body>
+</html>
